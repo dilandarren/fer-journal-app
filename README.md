@@ -1,17 +1,33 @@
 # Journal App
 
 
-<!-- istallation -->
+## Instalation
 ```sh
 yarn create vite
 
 yarn
 
 yarn dev
+```
 
+
+## Redux
+```sh
 yarn add react-router
+```
 
-##material desige
+
+## Redux
+```sh
+yarn add @reduxjs/toolkit react-redux
+```
+
+
+
+
+## Material design
+
+```sh
 yarn add @mui/material @emotion/react @emotion/styled
 
 ##Add index.html
