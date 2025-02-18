@@ -1,1 +1,2 @@
-export * from'./AuthSlices';
+export * from './authSlice';
+export * from './thunks';

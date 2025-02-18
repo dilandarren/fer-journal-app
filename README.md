@@ -11,10 +11,17 @@ yarn dev
 ```
 
 
-## Redux
+## Router
 ```sh
 yarn add react-router
 ```
+
+## Firebase
+```sh
+yarn add firebase
+```
+
+
 
 
 ## Redux
