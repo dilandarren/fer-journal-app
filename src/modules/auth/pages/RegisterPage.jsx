@@ -4,13 +4,13 @@ import { AuthLayout } from '../layout/AuthLayout'
 import { useForm } from '../../../hooks'
 import { useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { starCreatingUserWithEmailPassword } from '../../../store/auth/thunks';
+import { startCreatingUserWithEmailPassword } from '../../../store/auth/thunks';
 
 
 const formData ={
-    email: 'fernando@google.com',
+    email: 'nando@google.com',
     password: '123456',
-    displayName: 'Dilan'
+    displayName: 'Nando'
 };
 
 // const formData ={
@@ -45,7 +45,7 @@ export const RegisterPage = () => {
 
         if (!isFormValid) return;
 
-        dispatch(starCreatingUserWithEmailPassword(formState) );
+        dispatch(startCreatingUserWithEmailPassword(formState) );
     }
     
 
