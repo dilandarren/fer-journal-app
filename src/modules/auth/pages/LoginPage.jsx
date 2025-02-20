@@ -1,6 +1,6 @@
 import {Link as RouterLink} from 'react-router'
 import { Google } from "@mui/icons-material"
-import { Button, Grid2, Link, TextField, Typography } from "@mui/material"
+import { Alert, Button, Grid2, Link, TextField, Typography } from "@mui/material"
 import { AuthLayout } from '../layout/AuthLayout'
 import { useForm } from '../../../hooks'
 import { useDispatch, useSelector } from 'react-redux'
@@ -10,7 +10,7 @@ import { useMemo } from 'react'
 
 export const LoginPage = () => {
 
-    const {status} = useSelector(state => state.auth)
+    const {status, errorMessage} = useSelector(state => state.auth)
 
     const dispatch = useDispatch();
     const { email, password, onInputChange} = useForm({
@@ -64,7 +64,43 @@ export const LoginPage = () => {
                         />
                     </Grid2>
 
-                    <Grid2 container spacing={2} sx={{mb: 2, mt: 1}}>
+
+
+
+
+
+
+                    <Grid2 
+                        container
+                        display={!!errorMessage ? '' : 'none'}
+                        
+                    >
+                        <Grid2 
+                            xs={12}
+                            sx={{mt:1}}
+                        >
+                            <Alert severity='error' >
+                                {errorMessage}
+                            </Alert>
+                        </Grid2>
+                    </Grid2>
+
+
+
+
+
+
+
+
+
+                    <Grid2 
+                        container 
+                        
+                        spacing={2} 
+                        sx={{mb: 2, mt: 1}}
+                    >
+
+                        
 
                         <Grid2 xs={12} sm={6}>
                             <Button 
