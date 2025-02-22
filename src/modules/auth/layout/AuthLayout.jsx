@@ -3,6 +3,7 @@ import { Grid2, Typography } from "@mui/material"
 export const AuthLayout = ({children, title = ''}) => {
     return (
         <Grid2
+            
             container
             spacing={0}
             direction="column"
