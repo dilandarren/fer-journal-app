@@ -6,6 +6,6 @@ import { jornalSlice } from "./journal/journalSlice";
 export const store = configureStore({
     reducer: {
         auth: authSlice.reducer,
-        jornal: jornalSlice.reducer,
+        journal: jornalSlice.reducer,
     },
 });
