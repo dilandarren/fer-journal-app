@@ -31,7 +31,7 @@ export const jornalSlice = createSlice({
             state.notes = action.payload
         },
         setSaving: (state) => {
-
+            
         },
         updateNote: (state, action) => {
 
