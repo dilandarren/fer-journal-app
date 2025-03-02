@@ -46,6 +46,12 @@ yarn add @mui/material @emotion/react @emotion/styled
 #     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
 # />
 
-##Icons
+## Icons
 yarn add @mui/icons-material
+```
+
+
+## Sweetalert2
+```sh
+yarn add sweetalert2
 ```
